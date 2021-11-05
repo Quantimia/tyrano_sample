@@ -1,46 +1,163 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="暗算検定"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「暗算検定入門」[l][r]
 
-メロスは激怒した。[l][r]
+This is a test for your calculation ability.[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+You need to answer each question without calculators.[l][r]
 
-(中略)[l][r]
+Question [l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+1456+6379=?[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+[link target=*tag_correct] →7835 [endlink][r]
+[link target=*tag_false] →7735 [endlink][r]
 [s]
 
-*tag_sleep
+*tag_false
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+Wrong![l][r]
+Good luck for your next challenge.[r]
+You are...[l][r]
 
-【 BAD END 】[l][cm]
+【 Ambitious Challenger 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
+*tag_correct
 
-[bg storage=run.jpg time=500]
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+Correct![l][r]
 
-【 GOOD END 】[l][cm]
+Next Question:[l][r]
+
+285×7=?[l][r]
+
+[link target=*tag_correct2] →1995 [endlink][r]
+[link target=*tag_false2] →2095 [endlink][r]
+[s]
+
+*tag_false2
+
+[cm]
+
+
+Wrong![l][r]
+Good luck for your next challenge.[r]
+You are...[l][r]
+
+【 Cute Challenger 】[l][cm]
+
+[jump target=*start]
+
+*tag_correct2
+
+
+[cm]
+Correct![l][r]
+
+Next Question:[l][r]
+
+6!=?[l][r]
+
+[link target=*tag_correct3] →720 [endlink][r]
+[link target=*tag_false3] →620 [endlink][r]
+[s]
+
+*tag_false3
+[cm]
+
+
+Wrong![l][r]
+Good luck for your next challenge.[r]
+You are...[l][r]
+
+【 Curious Child 】[l][cm]
+
+[jump target=*start]
+
+*tag_correct3
+
+[cm]
+Correct![l][r]
+
+This is the final questoin:[l][r]
+
+1+2+3+...+99=?[l][r]
+
+[link target=*tag_false4] →5900 [endlink][r]
+[link target=*tag_correct4] →4900 [endlink][r]
+[link target=*tag_false5] →5000 [endlink][r]
+[link target=*tag_false6] →4950 [endlink][r]
+[link target=*tag_false7] →5050 [endlink][r]
+[s]
+
+*tag_false4
+[cm]
+
+
+
+Wrong![l][r]
+Good luck for your next challenge.[r]
+You are...[l][r]
+
+【 not so bad 】[l][cm]
+
+[jump target=*start]
+
+*tag_false5
+[cm]
+
+
+Wrong![l][r]
+Good luck for your next challenge.[r]
+You are...[l][r]
+
+【 Close to a University Student 】[l][cm]
+
+[jump target=*start]
+
+*tag_false6
+[cm]
+
+Wrong![l][r]
+Good luck for your next challenge.[r]
+You are...[l][r]
+
+【 Math Wolf 】[l][cm]
+
+[jump target=*start]
+
+*tag_false7
+[cm]
+
+
+Wrong![l][r]
+Good luck for your next challenge.[r]
+You are...[l][r]
+
+【 Math Monkey 】[l][cm]
+
+[jump target=*start]
+
+*tag_correct4
+
+[cm]
+Congratulations![l][r]
+
+You have answered all the qestions correctly![l][r]
+
+You are...[l][r]
+
+【 Human Calculator 】[l][cm]
 
 [jump target=*start]
